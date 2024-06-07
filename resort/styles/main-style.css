@@ -1,0 +1,344 @@
+* {
+    margin: 0;
+    padding: 0;
+    font-family: "Montserrat", sans-serif;
+}
+
+section {
+    width: 100%;
+    height: 40em;
+    background-image: url(../images/9581012_37130.jpg);
+    background-size: cover;
+    clip-path: circle(180vh at 50% -80vh);
+    position: relative;
+}
+
+nav {
+    position: absolute;
+    top: 5%;
+    right: 5%;
+    font-size: 1.5vw;
+}
+
+nav ul {
+    padding-right: 2em;
+    display: inline-block;
+    list-style: none;
+}
+
+nav li {
+    display: inline-block;
+    margin-right: 10px;
+}
+
+nav a {
+    text-decoration: none;
+    color: #ff5c5c;
+    font-weight: bold;
+}
+
+nav a:hover {
+    color: aquamarine;
+    text-decoration: underline;
+}
+
+header img {
+    margin-top: 1em;
+    margin-left: 1em;
+    width: 85px;
+    height: 60px;
+}
+
+header h1 {
+    position: absolute;
+    top: 35%;
+    left: 20%;
+    text-align: center;
+    width: 60%;
+    height: 40px;
+    font-size: xx-large;
+    color: #fff5ee;
+}
+
+header h1:hover {
+    color: #ffdead;
+    transition: .4s;
+}
+
+header hr{
+   position: absolute;
+   left: 30%;
+   top: 42%;
+   width: 43%;
+   height: 2.5px;
+   background: linear-gradient(to right, yellow, green  );
+   
+}
+
+form {
+    position: absolute;
+    top: 43%;
+    left: 30%;
+}
+
+.search-form {
+    width: 700px;
+    margin: 0;
+    text-align: center;
+    display: inline-block;
+    vertical-align: middle;
+}
+
+.search-form input[type="text"] {
+    width: 60%;
+    height: 26px;
+    padding: 10px;
+    margin-right: 10px;
+    border-radius: 16px;
+}
+
+.search-form button {
+    width: 70px;
+    padding: 10px;
+    border-radius: 16px;
+    font-weight: 600;
+}
+
+.search-form img {
+    padding: 2px;
+    height: 40%;
+    width: 40%;
+}
+
+.search-form button:hover {
+    box-shadow: 5px 6px 15px -4px rgba(12, 13, 13, 0.62);
+    transition: 0.4s;
+    font-weight: 800;
+    opacity: 0.8;
+}
+
+.heroimage{
+    position: absolute;
+    top: 70%;
+    left: 5%;
+    width: 90%;
+    display: flex;
+    flex-wrap: wrap;
+
+}
+
+.heroimage img{
+    height: 330px;
+    width: 450px;
+    border-radius: 20px;
+    box-shadow: 4px 3px 10px -1px rgba(12,153,194,0.75);
+
+}
+
+.heroimage strong{
+    font-size: 23px;
+    color: #00ced1;
+
+}
+
+.heroimage p{
+    padding: 5em 2em 0 2em;
+    color: #FFFFFF;
+    font-size: 18 px;
+}
+.heroimage span{
+    font-weight: bold;
+}
+
+body {
+    min-height: 110em;
+    background: rgb(9, 9, 121);
+    background: linear-gradient(95deg, rgba(9,9,121,1) 1%, rgba(8,38,140,1) 24%, rgba(7,64,157,1) 46%, rgba(3,144,210,1) 91%);
+    background-repeat: no-repeat;
+}
+main h1 {
+    position: absolute;
+    top: 160%;
+    left: -8%;
+    text-align: center;
+    width: 60%;
+    color: #FFFFFF;
+}
+
+.activity-listing {
+    position: absolute;
+    top: 140%;
+    left: 5%;
+    width: 90%;
+    display: flex;
+    justify-content:right;
+}
+
+.activity-card {
+    border-radius: 14px;
+    display: inline-block;
+    vertical-align: text-top;
+    width: 200px;
+    background-color: #FFFFFF;
+    box-shadow: 4px 3px 10px -1px rgba(12,153,194,0.75);
+    transition: 0.2s;
+    overflow: hidden;
+    margin: 1em 1em 1em 1em;
+    
+}
+
+.activity-card img {
+    width: 100%;
+    height: 200px;
+    object-fit: fill;
+    object-position: 0% center;
+}
+
+.activity-card-title {
+    padding: 0.5em;
+    font-size: 1em;
+    font-weight: bold;
+    text-align: center;
+}
+.activity-card:hover{
+    width: 205px;
+    height: 245px;
+    box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.4);
+    color: #34282c;
+}
+
+.activity-card-title hr{
+    height: 1.5px;
+    background: linear-gradient(to right, blue ,aquamarine);
+}
+
+footer{
+    position: absolute;
+    top: 200%;
+    left: 2%;
+    width: 95%;
+    color: #FFFFFF;
+    padding-bottom: 1em;
+    text-align: center;
+}
+
+footer hr{
+    max-width: 100%;
+    height: 1.5px;
+    background: linear-gradient(to right, blue ,aquamarine);
+}
+
+@media only screen and (max-width: 600px) {
+    section {
+        height: auto;
+        clip-path: none;
+    }
+
+    nav {
+        position: static;
+        font-size: 5vw;
+        text-align: center;
+        top: auto;
+        right: auto;
+        width: 100%;
+    }
+
+    nav ul {
+        padding-right: 0;
+        display: block;
+        margin-top: 1em;
+    }
+
+    nav li {
+        display: block;
+        margin-right: 0;
+    }
+
+    header {
+        text-align: center;
+    }
+
+    header h1 {
+        position: static;
+        top: auto;
+        left: auto;
+        width: 100%;
+        font-size: large;
+    }
+
+    header hr {
+        display: none;
+    }
+
+    form {
+        position: static;
+        top: auto;
+        left: auto;
+        text-align: center;
+    }
+
+    .search-form {
+        width: 90%;
+        margin: 0 auto;
+    }
+
+    .search-form input[type="text"] {
+        width: 70%;
+        margin-right: 0;
+    }
+
+    .search-form button {
+        width: 15%;
+        margin-top: 0.5em;
+    }
+
+    .heroimage {
+        position: static;
+        top: auto;
+        left: auto;
+        width: 100%;
+        justify-content: center;
+    }
+
+    .heroimage img {
+        width: 90%;
+        height: auto;
+    }
+
+    .heroimage p {
+        padding: 2em 0;
+    }
+
+    main h1 {
+        position: static;
+        top: auto;
+        left: auto;
+        width: 100%;
+        font-size: large;
+    }
+
+    .activity-listing {
+        position: static;
+        top: auto;
+        left: auto;
+        width: 100%;
+        justify-content: center;
+    }
+
+    .activity-card {
+        width: 90%;
+        margin: 1em auto;
+    }
+
+    footer {
+        position: static;
+        top: auto;
+        left: auto;
+        width: 100%;
+        padding-bottom: 1em;
+    }
+
+    footer hr {
+        display: none;
+    }
+}

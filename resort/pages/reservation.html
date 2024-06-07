@@ -1,0 +1,77 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Reservation Form</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.4/css/all.min.css">
+    <link rel="stylesheet" href="../styles/reservation-style.css">
+</head>
+
+<body>
+    <div>
+        <header>
+            <h1>Yoly's Beach Resort</h1>
+        </header>
+        <nav>
+            <ul>
+                <li><a href="../index.html">Home</a></li>
+                <li><a href="./cottages.html">Amenities</a></li>
+                <li><a href="./roomrates.html">Room Rates</a></li>
+                <li><a href="./reservation.html">Reservation</a></li>
+                <li><a href="./aboutus.html">About Us</a></li>
+            </ul>
+        </nav>
+    </div>
+    <main>
+        <h2>Reservation Form</h2>
+        <div class="icon-container">
+            <i class="fas fa-info-circle" id="info-icon"></i>
+            <p id="tooltip">
+                    <span>•Complete Form:</span> Fill in required fields with accurate details, including personal info, dates, and room preferences.</li>
+                    <br><br><span>•Review & Confirm:</span> Double-check all information for accuracy.</li>
+                    <br><br><span>•Submit:</span> Click "Submit" or "Confirm Reservation."</li>
+                    <br><br><span>•Confirmation:</span> Expect an email confirming receipt of your request, with further details on payment and booking confirmation.</li>
+            </p>
+          </div>
+        <form>
+            <label for="name">Name:</label>
+            <input type="text" placeholder="Fullname">
+
+            <label for="email">Email:</label>
+            <input type="text" placeholder="ex: example@gmail.com">
+
+            <label for="guests">Number of Guests:</label>
+            <select >
+                <option value="">Select</option>
+                <option value="5">5</option>
+                <option value="8">8</option>
+                <option value="12">12</option>
+                <option value="15">15</option>
+                <option value="15+">15+</option>
+            </select>
+
+            <label for="checkin"><strong>Check-In Date:</strong></label><br>
+            <input type="date"><br>
+    
+            <label for="checkout"><strong>Check-Out Date:</strong></label><br>
+            <input type="date"><br>
+
+            <label for="special-request">Special Request</label>
+            <input type="text">
+
+            <input type="submit" value="Submit">
+        </form>
+    </main>
+    <footer>
+        <p>
+        <hr>
+            <em>
+                &copy;2024 Yoly's Beach Resort. All Rights Reserved.
+            </em>
+        </p>
+    </footer>
+</body>
+
+</html>

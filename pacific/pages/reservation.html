@@ -1,0 +1,77 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=>, initial-scale=1.0">
+    <title>Pacific Trail Resort</title>
+    <link rel="stylesheet" href="../style.css">
+</head>
+
+<body>
+    <div class="wrapper">
+        <header>
+            <h1>Pacific Trail Resort</h1>
+        </header>
+    
+    <nav>
+        <a href="../index.html">Home</a> &nbsp;&nbsp;
+        <a href="./cottages.html">Cottages</a> &nbsp;&nbsp;
+        <a href="./activities.html">Activities</a> &nbsp;&nbsp;
+        <a href="./reservation.html">Reservation</a> &nbsp;&nbsp;
+        <hr>
+    </nav>
+    <main>
+            <table>
+                <tr>
+                    <td>
+                        <span><strong>Reservation Form</strong></span>
+                        <form action="/submit_reservation" method="POST">
+                            <label for="name"><strong>Name:</strong></label><br>
+                            <input type="text" id="name" name="name" required><br>
+    
+                            <label for="email"><strong>Email:</strong></label><br>
+                            <input type="email" id="email" name="email" required><br>
+    
+                            <label for="checkin"><strong>Check-In Date:</strong></label><br>
+                            <input type="date" id="checkin" name="checkin" required><br>
+    
+                            <label for="checkout"><strong>Check-Out Date:</strong></label><br>
+                            <input type="date" id="checkout" name="checkout" required><br>
+    
+                            <label for="adults"><strong>Number of Adults:</strong></label><br>
+                            <input type="number" id="adults" name="adults" min="1" required><br>
+    
+                            <label for="children"><strong>Number of Children:</strong></label><br>
+                            <input type="number" id="children" name="children" min="0" required><br>
+                            <br>
+                            <input type="submit" value="Submit">
+                        </form>
+                    </td>
+    
+                    <td>
+                        <span><strong>Office Hours</strong></span>
+                        <br><strong>Mon:</strong> &nbsp; 8:00am - 5:30pm
+                        <br><strong>Tue:</strong> &nbsp;&nbsp;&nbsp; 8:00am - 5:30pm
+                        <br><strong>Wed:</strong> &nbsp; 8:00am - 5:30pm
+                        <br><strong>Thu:</strong> &nbsp;&nbsp; 8:00am - 5:30pm
+                        <br><strong>Fri:</strong> &nbsp;&nbsp;&nbsp;&nbsp; 8:00am - 5:30pm
+                        <br><strong>Sat:</strong> &nbsp;&nbsp;&nbsp; 8:00am - 4:00pm
+                        <br><strong>Sun:</strong> &nbsp;&nbsp; Closed
+                    </td>
+    
+                    <td>
+                        <p><span><strong>Contact</strong></span>
+                            <br><strong>Phone: </strong> (08) 3421 7643
+                            <br><strong>Fax: </strong> (08) 3421 7644
+                            <br><strong>Email: </strong><a id="hyperlink" href="mailto:enquiries@pacifictrail.com">enquiries@pacifictrail.com</a></p>
+                    </td>
+                </tr>
+            </table>
+    </main>
+
+    <footer>
+        <p><em>&copy;2024 Pacific Trails Resort. All Rights Reserved. <br><a href="dummyemail@pacifictrails.com">dummyemail@pacifictrails.com</a></em></p>
+    </footer>
+    </div>
+</body>
+</html>
